@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador do Templo Maia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="temple-background"></div>
+    
+    <main class="game-container">
+        <div class="golden-border top"></div>
+        <div class="golden-border right"></div>
+        <div class="golden-border bottom"></div>
+        <div class="golden-border left"></div>
+        
+        <header class="game-header">
+            <h1 class="game-title">Explorador do Templo Maia</h1>
+            <h2 id="phase-title" class="game-subtitle"></h2>
+        </header>
+        
+        <section class="game-description">
+            <p id="story-text"></p>
+        </section>
+        
+        <section id="choices" class="game-actions"></section>
+        
+        <footer class="game-footer">
+            <div class="game-stats">
+                <div class="relics">
+                    <span class="stats-icon relics-icon"></span>
+                    <span id="relics-text" class="stats-text">Relíquias: 0/3</span>
+                </div>
+                
+                <div class="lives">
+                    <div id="hearts-container" class="hearts-container">
+                        <span class="heart"></span>
+                        <span class="heart"></span>
+                        <span class="heart"></span>
+                        <span class="heart"></span>
+                        <span class="heart"></span>
+                    </div>
+                    <span id="lives-text" class="stats-text">Vidas: 5</span>
+                </div>
+            </div>
+            <button id="restart" class="restart-button">Recomeçar</button>
+        </footer>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

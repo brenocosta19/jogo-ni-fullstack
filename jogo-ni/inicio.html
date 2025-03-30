@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorador de Templos: Aventura Maia e Inca</title>
+  <link rel="stylesheet" href="inicio.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap">
+</head>
+<body>
+  <div class="container">
+    <!-- Decoração de fundo -->
+    <div class="bg-decoracao bg-decoracao-1"></div>
+    <div class="bg-decoracao bg-decoracao-2"></div>
+    <div class="bg-decoracao bg-decoracao-3"></div>
+    
+    <div class="tela-inicial">
+      <!-- Símbolo decorativo superior -->
+      <div class="simbolo-topo"></div>
+      
+      <!-- Título do jogo -->
+      <h1 class="titulo">OS SEGREDOS DE IXCHEL</h1>
+      <h2 class="subtitulo">Uma Jornada pelas Civilizações Maia e Inca</h2>
+      
+      <!-- Divisor decorativo -->
+      <div class="divisor">
+        <div class="linha"></div>
+        <div class="simbolo-divisor"></div>
+        <div class="linha"></div>
+      </div>
+      
+      <!-- Botões principais -->
+      <div class="botoes">
+        <a href="index.html"><button id="btn-iniciar" class="botao">INICIAR JORNADA</button></a>
+        <button id="btn-instrucoes" class="botao">INSTRUÇÕES</button>
+      </div>
+      
+      <!-- Decoração inferior -->
+      <div class="decoracao-inferior"></div>
+      <p class="texto-rodape">Explore templos antigos, descubra artefatos perdidos e desvende mistérios ancestrais</p>
+    </div>
+    
+    <!-- Painel de instruções (inicialmente oculto) -->
+    <div id="painel-instrucoes" class="painel">
+      <div class="painel-conteudo">
+        <h2 class="painel-titulo">INSTRUÇÕES</h2>
+        
+        <div class="instrucoes-lista">
+          <div class="instrucao-item">
+            <div class="instrucao-icone">1</div>
+            <div class="instrucao-texto">
+              <h3>Exploração</h3>
+              <p>Navegue pelos templos antigos escolhendo diferentes caminhos. Cada escolha pode levar a descobertas únicas ou perigos ocultos.</p>
+            </div>
+          </div>
+          
+          <div class="instrucao-item">
+            <div class="instrucao-icone">2</div>
+            <div class="instrucao-texto">
+              <h3>Inventário</h3>
+              <p>Colete artefatos e itens durante sua jornada. Alguns itens podem ser necessários para resolver enigmas ou acessar áreas secretas.</p>
+            </div>
+          </div>
+          
+          <div class="instrucao-item">
+            <div class="instrucao-icone">3</div>
+            <div class="instrucao-texto">
+              <h3>Saúde</h3>
+              <p>Fique atento à sua barra de saúde. Certas escolhas podem ser perigosas e diminuir sua saúde. Se chegar a zero, sua expedição termina.</p>
+            </div>
+          </div>
+        </div>
+        
+        <button id="btn-fechar-instrucoes" class="botao-fechar">FECHAR</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript simples para controlar o painel de instruções
+    document.addEventListener('DOMContentLoaded', function() {
+      const btnIniciar = document.getElementById('btn-iniciar');
+      const btnInstrucoes = document.getElementById('btn-instrucoes');
+      const btnFecharInstrucoes = document.getElementById('btn-fechar-instrucoes');
+      const painelInstrucoes = document.getElementById('painel-instrucoes');
+      
+      // Botão iniciar
+      btnIniciar.addEventListener('click', function() {
+        window.location.href = 'index.html'; // Redireciona para o jogo
+      });
+      
+      // Abrir instruções
+      btnInstrucoes.addEventListener('click', function() {
+        painelInstrucoes.classList.add('ativo');
+      });
+      
+      // Fechar instruções
+      btnFecharInstrucoes.addEventListener('click', function() {
+        painelInstrucoes.classList.remove('ativo');
+      });
+      
+      // Fechar instruções ao clicar fora do painel
+      painelInstrucoes.addEventListener('click', function(e) {
+        if (e.target === painelInstrucoes) {
+          painelInstrucoes.classList.remove('ativo');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
