@@ -1,4 +1,4 @@
-/* Reset e estilos base */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
     align-items: center;
   }
   
-  /* Overlay de fundo escuro */
+  
   .background-overlay {
     position: fixed;
     top: 0;
@@ -28,7 +28,7 @@
     z-index: -2;
   }
   
-  /* Efeito de luz de tocha */
+  
   .torch-light {
     position: fixed;
     top: 0;
@@ -56,7 +56,7 @@
     }
   }
   
-  /* Contêiner do pergaminho */
+  
   .scroll-container {
     width: 90%;
     max-width: 800px;
@@ -110,7 +110,7 @@
     z-index: 1;
   }
   
-  /* Título */
+  
   .title {
     font-family: "Cinzel", serif;
     font-size: 2.5rem;
@@ -122,7 +122,7 @@
     letter-spacing: 2px;
   }
   
-  /* Texto do prólogo */
+  
   .prologue-text {
     font-size: 1.2rem;
     line-height: 1.8;
@@ -151,7 +151,7 @@
     text-shadow: 0 0 5px rgba(16, 185, 129, 0.3);
   }
   
-  /* Botão de ação */
+  
   .action-container {
     display: flex;
     justify-content: center;

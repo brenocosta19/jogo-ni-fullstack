@@ -222,7 +222,7 @@ function updateGame() {
         choicesDiv.appendChild(button);
     });
 
-    // Atualiza contador de relíquias quando obtidas
+    
     if (currentPhase === 6) relics = 1; // Prisma
     if (currentPhase === 12) relics = 2; // Chave-Lua
     if (currentPhase === 20) relics = 3; // Crânio
@@ -255,5 +255,5 @@ restartBtn.onclick = () => {
     updateGame();
 };
 
-// Inicia o jogo
+
 updateGame();
