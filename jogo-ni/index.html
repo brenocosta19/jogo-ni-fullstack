@@ -9,38 +9,34 @@
 </head>
 <body>
   <div class="container">
-    <!-- Decoração de fundo -->
     <div class="bg-decoracao bg-decoracao-1"></div>
     <div class="bg-decoracao bg-decoracao-2"></div>
     <div class="bg-decoracao bg-decoracao-3"></div>
     
     <div class="tela-inicial">
-      <!-- Símbolo decorativo superior -->
       <div class="simbolo-topo"></div>
       
-      <!-- Título do jogo -->
       <h1 class="titulo">OS SEGREDOS DE IXCHEL</h1>
       <h2 class="subtitulo">Uma Jornada pelas Civilizações Maia e Inca</h2>
       
-      <!-- Divisor decorativo -->
       <div class="divisor">
         <div class="linha"></div>
         <div class="simbolo-divisor"></div>
         <div class="linha"></div>
       </div>
       
-      <!-- Botões principais -->
+      
       <div class="botoes">
         <a href="jogo.html"><button id="btn-iniciar" class="botao">INICIAR JORNADA</button></a>
         <button id="btn-instrucoes" class="botao">INSTRUÇÕES</button>
       </div>
       
-      <!-- Decoração inferior -->
+      
       <div class="decoracao-inferior"></div>
       <p class="texto-rodape">Explore templos antigos, descubra artefatos perdidos e desvende mistérios ancestrais</p>
     </div>
     
-    <!-- Painel de instruções (inicialmente oculto) -->
+    
     <div id="painel-instrucoes" class="painel">
       <div class="painel-conteudo">
         <h2 class="painel-titulo">INSTRUÇÕES</h2>
@@ -76,37 +72,7 @@
     </div>
   </div>
 
-  <script>
-    // JavaScript simples para controlar o painel de instruções
-    document.addEventListener('DOMContentLoaded', function() {
-      const btnIniciar = document.getElementById('btn-iniciar');
-      const btnInstrucoes = document.getElementById('btn-instrucoes');
-      const btnFecharInstrucoes = document.getElementById('btn-fechar-instrucoes');
-      const painelInstrucoes = document.getElementById('painel-instrucoes');
-      
-      // Botão iniciar
-      btnIniciar.addEventListener('click', function() {
-        window.location.href = 'index.html'; // Redireciona para o jogo
-      });
-      
-      // Abrir instruções
-      btnInstrucoes.addEventListener('click', function() {
-        painelInstrucoes.classList.add('ativo');
-      });
-      
-      // Fechar instruções
-      btnFecharInstrucoes.addEventListener('click', function() {
-        painelInstrucoes.classList.remove('ativo');
-      });
-      
-      // Fechar instruções ao clicar fora do painel
-      painelInstrucoes.addEventListener('click', function(e) {
-        if (e.target === painelInstrucoes) {
-          painelInstrucoes.classList.remove('ativo');
-        }
-      });
-    });
-  </script>
+  <script src="menu-script.js"></script>
 </body>
 </html>
 
